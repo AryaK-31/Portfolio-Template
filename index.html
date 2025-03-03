@@ -190,18 +190,22 @@
                         <span>
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name">
+                            <span id="name-error" class="error-message" style="color: red;"></span>
                         </span>
                         <span>
-                            <label for="name">Email</label>
+                            <label for="email">Email</label>
                             <input type="email" name="email" id="email">
+                            <span id="email-error" class="error-message" style="color: red;"></span>
                         </span>
                     </div>
                     <span>
                         <label for="msg">Message</label>
                         <textarea name="msg" id="msg"></textarea>
+                        <span id="msg-error" class="error-message" style="color: red;"></span>
                     </span>
                     <button type="submit">Submit</button>
                 </form>
+                
             </div>
             <div class="form-msg">
                 <h2 style="font-size: 2rem;">I'm a Multi-tasker</h2>
@@ -256,6 +260,8 @@
             <p>Crafted with 🖤 in Pune | All right reserved @ak3108</p>
         </div>
     </footer>
+
+    <script src="/script.js"></script>
 
 </body>
 
