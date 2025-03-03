@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang&family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+:root {
+    --primary-color: rgb(225, 83, 32);
+    --secondary-color: rgb(33, 33, 33);
+    --text-color: white;
+    --background-light: #dcdcdc;
+    --background-dark: rgb(11, 11, 11);
+    /* --gradient-overlay: linear-gradient(270deg, rgba(46, 46, 46, 0.65), var(--background-dark));
+    --gradient-form: linear-gradient(to bottom, rgba(225, 83, 32, 0.88), rgba(23, 22, 22, 0.7), rgba(191, 188, 188, 0.8)); */
+}
+
 
 * {
     padding: 0px;
@@ -32,7 +38,7 @@ a{
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
-    background: rgb(33, 33, 33);
+    background: var(--secondary-color);
     /* position: sticky;
     top: 0;
     left: 0;
@@ -54,7 +60,7 @@ a{
 .navbar .nav-item::after {
     content: "";
     position: absolute;
-    background-color: rgb(225, 83, 32);
+    background-color: var(--primary-color);
     height: 2px;
     width: 0;
     left: 50%;
@@ -69,7 +75,7 @@ a{
 
 
 .nav-item-5 {
-    background-color: rgb(225, 83, 32);
+    background-color: var(--primary-color);
     padding: 0.3rem 0.7rem;
     font-size: 0.95rem;
     color: white;
@@ -78,7 +84,7 @@ a{
 
 .navbar .logo{
     font-family: 'Kaushan Script', cursive;
-    color: rgb(225, 83, 32);
+    color: var(--primary-color);
     font-size: 1.5rem;
 }
 
@@ -86,7 +92,7 @@ a{
     height:  92vh;
     width: 100%;
     display: flex;
-    background: #dcdcdc;
+    background: var(--background-light);
 }
 
 .hero-text {
@@ -148,7 +154,7 @@ a{
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
-    background-image: linear-gradient(270deg, rgba(46, 46, 46, 0.65), rgb(11, 11, 11)), url(media/images/aboutImg.jpg);
+    background-image: linear-gradient(270deg, rgba(46, 46, 46, 0.65), var(--background-dark)), url(media/images/aboutImg.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -164,7 +170,7 @@ a{
 }
 
 .about h3 span {
-    color: rgb(225, 83, 32);
+    color: var(--primary-color);
 }
 
 .about .details-main {
@@ -189,7 +195,7 @@ a{
 .projects{
     padding: 2%;
     height: 110vh;
-    background: rgb(33, 33, 33);
+    background: var(--secondary-color);
 }
 
 .projects .project-header{
@@ -242,7 +248,7 @@ a{
 .card-container button {
     margin-top: 0.6rem;
     padding: 0.4rem 0.6rem;
-    background-color: rgb(225, 83, 32);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 0.8rem;
@@ -253,7 +259,7 @@ a{
 
 .form-container{
     height: 70vh;
-    background: #dcdcdc;
+    background: var(--background-light);
 }
 
 .form-container h3{
@@ -331,14 +337,14 @@ a{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    background: rgb(33, 33, 33);
+    background: var(--secondary-color);
 }
 
 .footer-top .icons{
     display: flex;
     gap: 2.5rem;
     font-size: 1.6rem;
-    color: rgb(225, 83, 32);
+    color: var(--primary-color);
 }
 
 .footer-top .nav-links{
@@ -353,7 +359,7 @@ a{
 }
 
 .footer-top #icon:hover, .nav-link:hover{
-    color: rgb(225, 83, 32);
+    color: var(--primary-color);
 }
 
 .footer-secondary{
@@ -365,6 +371,6 @@ a{
     font-weight: 600;
     height: 10vh;
     color: white;
-    background-color: rgb(225, 83, 32);
+    background-color: var(--primary-color);
 }
 
